@@ -7,7 +7,7 @@
 
 module nozzlemount(){
 	// Filament hole	
-%	rotate([0,90,0]) cylinder(r=1.5, h=70, $fn=30);
+	rotate([0,90,0]) cylinder(r=1.7, h=70, $fn=30);
 
 	// Tapered filament intake after the drive gear
 //	translate([17,0,0]) rotate([0,90,0]) cylinder(r2=3,r1=2, h=10, $fn=30); 
