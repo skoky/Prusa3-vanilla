@@ -7,7 +7,7 @@
 
 module nozzlemount(){
 	// Filament hole	
-	rotate([0,90,0]) cylinder(r=1.5, h=70, $fn=30);
+%	rotate([0,90,0]) cylinder(r=1.5, h=70, $fn=30);
 
 	// Tapered filament intake after the drive gear
 //	translate([17,0,0]) rotate([0,90,0]) cylinder(r2=3,r1=2, h=10, $fn=30); 
@@ -106,9 +106,9 @@ translate([-5,-35,40.6]) cube([15,18,13]);
 // Shaft cutouts
 
 	// Main shaft cylinder cut
-	translate([21,8.1,7.5]) cylinder(r=6, h=total_height-9, $fn=50);
+	translate([21,8.1,6.5]) cylinder(r=6, h=total_height-9, $fn=50);
 	// Main shaft box cut
-	translate([21,18,7.5]) cylinder(r=4,h=total_height-24, $fn=90);
+	translate([21,18,6.5]) cylinder(r=4,h=total_height-23.4, $fn=90);
 
 //	 translate([11,12,36]) cube([20,10,10]);
 
@@ -123,9 +123,9 @@ translate([-5,-35,40.6]) cube([15,18,13]);
 	translate([13,8,1]) cube([16.2,20,6]);
 
 	// Back axis bearing cylinder cut
-	translate([21,8.1,-5+total_height-4]) cylinder(r=8.1, h=7.5, $fn=50);
+	translate([21,8.1,-5+total_height-4]) cylinder(r=8.1, h=10.5, $fn=50);
 	// Back axis bearing box cut
-	translate([13,8,total_height-9]) cube([16.2,20,7.5]);
+	translate([13,8,total_height-9]) cube([16.2,20,9.5]);
 
 
 
@@ -156,7 +156,7 @@ translate([0,0,-(52-total_height)-2]){
 	translate([5+31,-1,52-12-7]) rotate([0,90,90]) rotate([0,0,30]) cylinder(r=2, h=40, $fn=6);
 
 	// Idler 608 bearing cutout
-	translate([21,27.5,37]) cylinder(r=12, h=15, $fn=90);
+	translate([21,26.5,37]) cylinder(r=12, h=15, $fn=90);
 
 
 }
